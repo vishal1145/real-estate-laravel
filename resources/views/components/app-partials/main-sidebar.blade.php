@@ -30,28 +30,54 @@
                         class="{{ $routePrefix === 'dashboards' ? 'fill-primary dark:fill-accent' : 'fill-slate-500 dark:fill-navy-200' }} " />
                 </svg>
             </a>
+            
+            <!-- Travel -->
+            <a href="{{ route('apps/travel') }}"
+            class="flex h-11 w-11 items-center justify-center rounded-lg outline-none transition-colors duration-200 {{ $routePrefix === 'apps/travel' ? 'hover:bg-primary/20 focus:bg-primary/20 active:bg-primary/25 dark:bg-navy-600 bg-primary/10 dark:hover:bg-navy-450 dark:focus:bg-navy-450 dark:active:bg-navy-450/90' : 'hover:bg-primary/20 focus:bg-primary/20 active:bg-primary/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25' }}"
+                x-tooltip.placement.right="'Project'">
+                <svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M9.85714 3H4.14286C3.51167 3 3 3.51167 3 4.14286V9.85714C3 10.4883 3.51167 11 4.14286 11H9.85714C10.4883 11 11 10.4883 11 9.85714V4.14286C11 3.51167 10.4883 3 9.85714 3Z"
+                        class="{{ $routePrefix === 'layouts' ? 'fill-primary dark:fill-accent' : 'fill-slate-500 dark:fill-navy-200' }} " />
+                    <path
+                        d="M9.85714 12.8999H4.14286C3.51167 12.8999 3 13.4116 3 14.0428V19.757C3 20.3882 3.51167 20.8999 4.14286 20.8999H9.85714C10.4883 20.8999 11 20.3882 11 19.757V14.0428C11 13.4116 10.4883 12.8999 9.85714 12.8999Z"
+                        class="{{ $routePrefix === 'layouts' ? 'fill-primary dark:fill-accent' : 'fill-slate-500 dark:fill-navy-200' }} "
+                        fill-opacity="0.3" />
+                    <path
+                        d="M19.757 3H14.0428C13.4116 3 12.8999 3.51167 12.8999 4.14286V9.85714C12.8999 10.4883 13.4116 11 14.0428 11H19.757C20.3882 11 20.8999 10.4883 20.8999 9.85714V4.14286C20.8999 3.51167 20.3882 3 19.757 3Z"
+                        class="{{ $routePrefix === 'layouts' ? 'fill-primary dark:fill-accent' : 'fill-slate-500 dark:fill-navy-200' }} "
+                        fill-opacity="0.3" />
+                    <path
+                        d="M19.757 12.8999H14.0428C13.4116 12.8999 12.8999 13.4116 12.8999 14.0428V19.757C12.8999 20.3882 13.4116 20.8999 14.0428 20.8999H19.757C20.3882 20.8999 20.8999 20.3882 20.8999 19.757V14.0428C20.8999 13.4116 20.3882 12.8999 19.757 12.8999Z"
+                        class="{{ $routePrefix === 'layouts' ? 'fill-primary dark:fill-accent' : 'fill-slate-500 dark:fill-navy-200' }} "
+                        fill-opacity="0.3" />
+                </svg>
+                
+            
+            </a>
+
 
             <!-- Apps -->
             <a href="{{ route('apps/list') }}"
-                class="flex h-11 w-11 items-center justify-center rounded-lg outline-none transition-colors duration-200 {{ $routePrefix === 'apps' ? 'hover:bg-primary/20 focus:bg-primary/20 active:bg-primary/25 dark:bg-navy-600 bg-primary/10 dark:hover:bg-navy-450 dark:focus:bg-navy-450 dark:active:bg-navy-450/90' : 'hover:bg-primary/20 focus:bg-primary/20 active:bg-primary/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25' }}"
+                class="flex h-11 w-11 items-center justify-center rounded-lg outline-none transition-colors duration-200 {{ $routePrefix === 'apps/list' ? 'hover:bg-primary/20 focus:bg-primary/20 active:bg-primary/25 dark:bg-navy-600 bg-primary/10 dark:hover:bg-navy-450 dark:focus:bg-navy-450 dark:active:bg-navy-450/90' : 'hover:bg-primary/20 focus:bg-primary/20 active:bg-primary/25 dark:hover:bg-navy-300/20 dark:focus:bg-navy-300/20 dark:active:bg-navy-300/25' }}"
                 x-tooltip.placement.right="'Applications'">
                 <svg class="h-7 w-7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M5 8H19V16C19 17.8856 19 18.8284 18.4142 19.4142C17.8284 20 16.8856 20 15 20H9C7.11438 20 6.17157 20 5.58579 19.4142C5 18.8284 5 17.8856 5 16V8Z"
-                        class="{{ $routePrefix === 'apps' ? 'fill-primary dark:fill-accent' : 'fill-slate-500 dark:fill-navy-200' }} "
+                        class="{{ $routePrefix === 'apps/list' ? 'fill-primary dark:fill-accent' : 'fill-slate-500 dark:fill-navy-200' }} "
                         fill-opacity="0.3" />
                     <path
                         d="M12 8L11.7608 5.84709C11.6123 4.51089 10.4672 3.5 9.12282 3.5V3.5C7.68381 3.5 6.5 4.66655 6.5 6.10555V6.10555C6.5 6.97673 6.93539 7.79026 7.66025 8.2735L9.5 9.5"
-                        class="{{ $routePrefix === 'apps' ? 'stroke-primary dark:stroke-accent-light' : 'stroke-slate-500 dark:stroke-navy-200' }}"
+                        class="{{ $routePrefix === 'apps/list' ? 'stroke-primary dark:stroke-accent-light' : 'stroke-slate-500 dark:stroke-navy-200' }}"
                         stroke-linecap="round" />
                     <path
                         d="M12 8L12.2392 5.84709C12.3877 4.51089 13.5328 3.5 14.8772 3.5V3.5C16.3162 3.5 17.5 4.66655 17.5 6.10555V6.10555C17.5 6.97673 17.0646 7.79026 16.3397 8.2735L14.5 9.5"
-                        class="{{ $routePrefix === 'apps' ? 'stroke-primary dark:stroke-accent-light' : 'stroke-slate-500 dark:stroke-navy-200' }}"
+                        class="{{ $routePrefix === 'apps/list' ? 'stroke-primary dark:stroke-accent-light' : 'stroke-slate-500 dark:stroke-navy-200' }}"
                         stroke-linecap="round" />
                     <rect x="4" y="8" width="16" height="3" rx="1"
-                        class="{{ $routePrefix === 'apps' ? 'fill-primary dark:fill-accent' : 'fill-slate-500 dark:fill-navy-200' }} " />
+                        class="{{ $routePrefix === 'apps/list' ? 'fill-primary dark:fill-accent' : 'fill-slate-500 dark:fill-navy-200' }} " />
                     <path d="M12 11V15"
-                        class="{{ $routePrefix === 'apps' ? 'stroke-primary dark:stroke-accent-light' : 'stroke-slate-500 dark:stroke-navy-200' }}"
+                        class="{{ $routePrefix === 'apps/list' ? 'stroke-primary dark:stroke-accent-light' : 'stroke-slate-500 dark:stroke-navy-200' }}"
                         stroke-linecap="round" />
                 </svg>
             </a>

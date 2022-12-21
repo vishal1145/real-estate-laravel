@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\PagesController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -64,7 +65,14 @@ Route::middleware('auth')->group(function () {
     Route::get('/forms/layout-v2', [PagesController::class, 'formsLayoutV2'])->name('forms/layout-v2');
     Route::get('/forms/layout-v3', [PagesController::class, 'formsLayoutV3'])->name('forms/layout-v3');
     Route::get('/forms/layout-v4', [PagesController::class, 'formsLayoutV4'])->name('forms/layout-v4');
+
     Route::get('/forms/layout-v5', [PagesController::class, 'formsLayoutV5'])->name('forms/layout-v5');
+    Route::post('/forms/layout-v5', [AuthController::class, 'form'])->name('forms/layout-v5');
+    
+    Route::get('/forms/layout-v6', [PagesController::class, 'formsLayoutV6'])->name('forms/layout-v6');
+    Route::post('save', [AuthController::class, 'save'])->name('forms/layout-v6');
+
+
     Route::get('/forms/input-text', [PagesController::class, 'formsInputText'])->name('forms/input-text');
     Route::get('/forms/input-group', [PagesController::class, 'formsInputGroup'])->name('forms/input-group');
     Route::get('/forms/input-mask', [PagesController::class, 'formsInputMask'])->name('forms/input-mask');

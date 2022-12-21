@@ -203,6 +203,11 @@ class PagesController extends Controller
     {
         return view('pages/forms-layout-v5');
     }
+    public function formsLayoutV6()
+    {
+        return view('pages/forms-layout-v6');
+    }
+
 
     public function formsInputText()
     {
