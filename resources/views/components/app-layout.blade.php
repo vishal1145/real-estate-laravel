@@ -16,10 +16,11 @@
     </title>
 
     <!-- CSS & JS Assets -->
-    <link rel="stylesheet" href="{{resources('css/app.css')}}">
-
-    {{-- @vite(['resources/css/app.css','resources/js/app.js']) --}}
     
+    @vite(['resources/css/app.css','resources/js/app.js'])
+
+
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
