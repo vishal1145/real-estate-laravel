@@ -1,4 +1,12 @@
 <x-base-layout title="Login">
+<h2>ssssssssssss</h2>
+
+
+
+
+
+
+
     <div class="fixed top-0 hidden p-6 lg:block lg:px-12">
         <a href="#" class="flex items-center space-x-2">
             <img class="h-12 w-12" src="{{asset('images/app-logo.svg') }}" alt="logo" />
