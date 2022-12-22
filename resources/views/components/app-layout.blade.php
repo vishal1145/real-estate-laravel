@@ -16,7 +16,12 @@
     </title>
 
     <!-- CSS & JS Assets -->
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    
+    {{-- @vite(['resources/css/app.css','resources/js/app.js']) --}}
+
+    {{ HTML::script('resources/js/app.js') }}
+
+{{ HTML::style('resources/css/app.css') }}
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
